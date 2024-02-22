@@ -578,6 +578,10 @@ a {
     color: white;
 }
 
+input[type='range'] { 
+    accent-color: green; 
+}
+
 
 /* FOOTER- RIGHT PLAYER VOLUME SETTING */
 

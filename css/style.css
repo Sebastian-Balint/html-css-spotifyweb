@@ -419,3 +419,346 @@ a {
     bottom: 0;
 }
 
+.player-row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col15-left {
+    width: 15%;
+    height: 100%;
+}
+
+.col15-right {
+    width: 15%;
+    height: 100%;
+    position: relative;
+}
+
+.col70 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* FOOTER- LEFT PLAYER SETTING */
+
+.row-left-player {
+    max-width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.col-image {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.col-image img {
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col-title {
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+.col-title h5 {
+    position: absolute;
+    top: 40%;
+    transform: translate(-0%, -50%);
+}
+
+.col-title p {
+    position: absolute;
+    top: 60%;
+    transform: translate(-0%, -50%);
+}
+
+.col-icon {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.col-title a {
+    color: white;
+}
+
+#brano-nome {
+    font-size: 12px;
+    color: rgb(163, 163, 163);
+}
+
+#heart {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#folder {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* FOOTER- CENTER PLAYER SETTING */
+
+.row-center-player {
+    position: absolute;
+    height: 50%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.col-icon-center {
+    width: 50px;
+    height: 100%;
+    position: relative;
+}
+
+#play, #redo-alt, #step-forward, #step-backward, #random {
+    color: white;
+} 
+
+#play {
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#random, #step-backward, #step-forward, #redo-alt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* FOOTER- BOTTOM PLAYER TIME SETTING */
+
+.col-icon-center-bottom {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#line-range {
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.col-icon-center-bottom span {
+    font-size: 10px;
+    color: white;
+}
+
+
+/* FOOTER- RIGHT PLAYER VOLUME SETTING */
+
+.row-right-player {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.col-icon-right {
+    width: 40%;
+    height: 100%;
+}
+
+.col-icon-right a {
+    color: white;
+}
+
+.col-icon-right div {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.margin-r10 {
+    margin-right: 10px;
+}
+
+.col-icon-right-v {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.col-icon-right-v input {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 991px)  {
+    .album {
+        width: calc(100% / 4 - 20px);
+    }
+
+    .album-flex {
+        flex-wrap: wrap;
+    }
+
+    .col15-left, .col15-right {
+        width: 25%;
+    }
+    
+    .col70 {
+        max-width: 50%;
+    }
+
+    .row-center-player {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .album {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .album-flex {
+        flex-wrap: wrap;
+    }
+
+    .col15-left, .col15-right {
+        width: 33%;
+    }
+    
+    .col70 {
+        max-width: 33%;
+    }
+
+    .row-center-player {
+        width: 33%;
+    }
+
+    .col-icon-center-bottom {
+        width: 50vw;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 550px)  {
+    .sidebar {
+        width: 50px;
+    }
+
+    .music-content {
+        width: calc(100% - 50px);
+    }
+
+    .topbar {
+        width: calc(100% - 50px);
+    }
+
+    .album {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .album-flex {
+        flex-wrap: wrap;
+    }
+
+    .menu-playlist {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .small-logo {
+        display: block;
+    }
+
+    .menu-sidebar ul {
+        text-align: center;
+    }
+
+    .menu-sidebar span {
+        display: none;
+    }
+
+    .icon-svg {
+        margin-left: 5px;
+    }
+
+    #installa-app {
+        display: none;
+    }
+
+    .item-install-client hr {
+        display: none;
+    }
+
+    #user-text {
+        display: none;
+    }
+
+    #user {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -120%);
+    }
+
+    .item-install-client i {
+        margin-left: 0px;
+    }
+
+    #icon-download {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -550%);
+    }
+
+    #line-range {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .margin-r10 {
+        margin-right: 2px;
+    }
+
+    .col-icon-right-v input {
+        width: 80%;
+    }
+}
